@@ -8,7 +8,6 @@ import { GITHUB_CLIENT_ID, GITHUB_CLIENT_SECRET } from '$env/static/private';
 export const auth = betterAuth({
 	database: drizzleAdapter(db, {
 		provider: 'pg',
-		debugLogs: true,
 		schema
 	}),
 	plugins: [username()],
