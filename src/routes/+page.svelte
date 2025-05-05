@@ -8,12 +8,13 @@
 </script>
 
 <main class="mx-auto mt-16 max-w-3xl">
-	<h1 class="h1 mb-4">AI Habit</h1>
+	<h1 class="h1">Fondue</h1>
+	<p class="text-surface-contrast-300-700 mb-4">A place for your thoughts.</p>
 	<form use:enhance action="?/new" method="POST">
 		<div class="relative">
 			<textarea
 				bind:value={$form.prompt}
-				class="textarea placeholder:text-surface-conten h-48 w-full resize-none p-4"
+				class="textarea placeholder:text-surface-contrast-50-950 h-48 w-full resize-none p-4"
 				name="prompt"
 				id="prompt_id"
 				placeholder="What is on your mind?"
@@ -29,7 +30,7 @@
 						Submit
 					</Tooltip.Trigger>
 					<Tooltip.Portal>
-						<Tooltip.Content class="btn preset-filled-surface-100-900 mb-1 text-xs shadow-xl"
+						<Tooltip.Content class="badge preset-filled-surface-100-900 mb-1 text-xs shadow-xl"
 							>⌘ + ⏎</Tooltip.Content
 						>
 					</Tooltip.Portal>

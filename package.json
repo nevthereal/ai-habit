@@ -59,7 +59,8 @@
 		"better-auth": "^1.2.7",
 		"bits-ui": "^1.4.3",
 		"dotenv": "^16.5.0",
-		"drizzle-orm": "^0.40.1"
+		"drizzle-orm": "^0.40.1",
+		"drizzle-zod": "^0.7.1"
 	},
 	"pnpm": {
 		"onlyBuiltDependencies": [
