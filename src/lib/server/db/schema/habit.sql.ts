@@ -12,7 +12,6 @@ export const habit = pgTable('habit', {
 	name: text('name').notNull(),
 	description: text('description'),
 	createdAt: timestamp('created_at').notNull().defaultNow(),
-	updatedAt: timestamp('updated_at').notNull(),
 	userId,
 	frequency: frequency().notNull().default('daily'),
 	goal: integer('goal').notNull().default(3)
